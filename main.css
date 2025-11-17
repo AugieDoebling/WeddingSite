@@ -1,5 +1,8 @@
 html, body {
    min-height: 100%;
+   font-family: "Lilita One", sans-serif;
+ font-weight: 400;
+ font-style: normal;
 }
 
 body {
@@ -28,7 +31,7 @@ body {
    align-items: center;
    display:  flex;
    flex-direction: row;
-   margin: 0 40px 60px;
+   margin: 0 40px 30px;
    justify-content: space-between;
 }
 
@@ -47,9 +50,6 @@ body {
 }
 
 h1,h2,h3 {
-   font-family: "Lilita One", sans-serif;
- font-weight: 400;
- font-style: normal;
  color: #773F1A;
 }
 
@@ -60,9 +60,15 @@ p {
  text-align: center;
 }
 
+a {
+   text-decoration: none;
+}
+
 .pagetitle {
-   text-align: center;
+   /* text-align: center; */
    font-size: 48px;
+   border-bottom: 10px solid #773F1A;
+   margin: 0 60px 40px;
 }
 
 #frontimage {
@@ -72,6 +78,17 @@ p {
   border-radius: 30px;
 }
 
+.button {
+   background-color: #773F1A;
+   text-decoration: none;
+   width: fit-content;
+   padding: 20px 30px;
+   font-size: 30px;
+   display: block;
+   margin: auto;
+   color: #D6BE82;
+   border-radius: 30px;
+}
 
 
 

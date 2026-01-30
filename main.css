@@ -23,12 +23,10 @@ body {
    min-height: 800px;
    max-width: 1200px;
    width: 100%;
-   margin: 150px auto;
+   margin: 80px auto;
    border-radius: 30px;
    box-shadow: 5px 10px 20px #00000030;
    padding-bottom: 50px;
-   animation-name: s/*lideInUp;
-   animation-duratio*/n: 1s;
 }
 
 #headerbar {
@@ -69,7 +67,6 @@ a {
 }
 
 .pagetitle {
-   /* text-align: center; */
    font-size: 48px;
    border-bottom: 10px solid #773F1A;
    margin: 0 60px 40px;
@@ -149,9 +146,8 @@ table td:nth-child(2) {
   animation: toRight linear 6.8s infinite alternate, bounce linear 17s infinite alternate;
 }
 
-marquee {
-  height: 100vh;
-  position: fixed;
+#bouncing-canvas {
+  position: absolute;
   top: 0;
   z-index: -1;
 }

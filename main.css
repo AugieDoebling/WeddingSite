@@ -4,37 +4,37 @@
 }
 
 html, body {
-   min-height: 100%;
-   font-family: bobbyJones, sans-serif;
+ min-height: 100%;
+ font-family: bobbyJones, sans-serif;
  font-weight: 400;
  font-style: normal;
 }
 
 body {
-   background: #CCE7E9;
-   background: linear-gradient(180deg, rgba(204, 231, 233, 1) 0%, rgba(2, 102, 99, 1) 100%);
-   height: 100%;
-   margin: 0;
-   width: 100vw;
+ background: #CCE7E9;
+ background: linear-gradient(180deg, rgba(204, 231, 233, 1) 0%, rgba(2, 102, 99, 1) 100%);
+ height: 100%;
+ margin: 0;
+ width: 100vw;
 }
 
 #page {
-   background-color: #FFFDF3;
-   min-height: 800px;
-   max-width: 1200px;
-   width: 100%;
-   margin: 80px auto;
-   border-radius: 30px;
-   box-shadow: 5px 10px 20px #00000030;
-   padding-bottom: 50px;
+ background-color: #FFFDF3;
+ min-height: 800px;
+ max-width: 1200px;
+ width: 100%;
+ margin: 80px auto;
+ border-radius: 30px;
+ box-shadow: 5px 10px 20px #00000030;
+ padding-bottom: 50px;
 }
 
 #headerbar {
-   align-items: center;
-   display:  flex;
-   flex-direction: row;
-   margin: 0 40px 30px;
-   justify-content: space-between;
+ align-items: center;
+ display:  flex;
+ flex-direction: row;
+ margin: 0 40px 30px;
+ justify-content: space-between;
 }
 
 #sign {
@@ -56,20 +56,21 @@ h1,h2,h3 {
 }
 
 p {
-   font-family: "Open Sans", sans-serif;
+ font-family: "Cabin", "Open Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
  text-align: center;
+ font-size: 18px;
 }
 
 a {
-   text-decoration: none;
+ text-decoration: none;
 }
 
 .pagetitle {
-   font-size: 48px;
-   border-bottom: 10px solid #773F1A;
-   margin: 0 60px 40px;
+ font-size: 48px;
+ border-bottom: 10px solid #773F1A;
+ margin: 0 60px 40px;
 }
 
 .subhead {
@@ -101,16 +102,16 @@ a {
 }
 
 .button {
-   background-color: #773F1A;
-   text-decoration: none;
-   width: fit-content;
-   padding: 20px 30px;
-   font-size: 30px;
-   display: block;
-   margin: auto;
-   color: #D6BE82;
-   border-radius: 30px;
-   border-color: #D6BE82;
+ background-color: #773F1A;
+ text-decoration: none;
+ width: fit-content;
+ padding: 20px 30px;
+ font-size: 30px;
+ display: block;
+ margin: auto;
+ color: #D6BE82;
+ border-radius: 30px;
+ border-color: #D6BE82;
 }
 
 table {

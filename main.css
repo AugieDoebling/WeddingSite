@@ -103,7 +103,15 @@ a {
 
 .photos {
   width: 80%;
-  margin: 0 10% 20px;   
+  margin: 0 10% 20px;
+}
+
+.map {
+  display: block;
+  width: 80%;
+  height: 650px;
+  border: 0;
+  margin: 0 10% 20px;
 }
 
 #frontimage {
@@ -166,6 +174,108 @@ table td:nth-child(2) {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+/* ---- Header ----
+   The sign + 4 links need ~1007px of page width to sit on one line (measured:
+   350 sign + 497 links + 4x20 gap + 80 margin). Below that, stack them. */
+@media (max-width: 1040px) {
+  /* The sign takes a full-width row of its own, links sit in one row beneath it */
+  #headerbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 16px 10px;
+  }
+
+  #headerbar > a:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 768px) {
+  #page {
+    /* width:100% + side margins would overflow; auto fills what's left */
+    width: auto;
+    margin: 60px 10px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+  }
+
+  /* Four across is too tight on a phone — go 2x2 */
+  #headerbar {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 16px 24px;
+  }
+
+  #sign {
+    width: 260px;
+    margin-top: -45px;
+  }
+
+  .headerlink {
+    font-size: 26px;
+  }
+
+  .pagetitle {
+    font-size: 32px;
+    border-bottom-width: 6px;
+    margin: 0 16px 24px;
+  }
+
+  .subhead {
+    font-size: 24px;
+    margin: 0 16px 12px;
+  }
+
+  .paragraph {
+    margin: 0 16px 28px;
+  }
+
+  .packinglist {
+    margin: 0 16px 28px;
+    padding-left: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  table {
+    width: calc(100% - 32px);
+    margin: 0 16px 40px;
+    font-size: 18px;
+  }
+
+  /* Fixed time column: wide enough for a normal time on one line, so the
+     description column gets all the remaining slack */
+  table td:nth-child(2) {
+    width: 95px;
+    padding-left: 12px;
+  }
+
+  .headerphoto,
+  .photos,
+  .map,
+  #frontimage {
+    width: calc(100% - 32px);
+    margin: 0 16px 20px;
+  }
+
+  .map {
+    height: 400px;
+  }
+
+  #frontimage {
+    margin: 16px;
+    border-radius: 20px;
+  }
+
+  .button {
+    font-size: 26px;
+    padding: 16px 24px;
+  }
 }
 
 @keyframes slideInUp {

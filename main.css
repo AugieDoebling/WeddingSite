@@ -15,7 +15,6 @@ body {
  background: linear-gradient(180deg, rgba(204, 231, 233, 1) 0%, rgba(2, 102, 99, 1) 100%);
  height: 100%;
  margin: 0;
- width: 100vw;
 }
 
 #page {
@@ -33,6 +32,8 @@ body {
  align-items: center;
  display:  flex;
  flex-direction: row;
+ flex-wrap: wrap;
+ gap: 0 20px;
  margin: 0 40px 30px;
  justify-content: space-between;
 }
@@ -40,6 +41,7 @@ body {
 #sign {
   margin-top: -60px;
   width: 350px;
+  max-width: 100%;
 }
 
 .headerlink {
@@ -160,6 +162,9 @@ table td:nth-child(2) {
 #bouncing-canvas {
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 

@@ -16,11 +16,18 @@ let dvd = {
     ctx = canvas.getContext("2d");
     dvd.img.src = 'img/bouncing.png';
 
-    //Draw the "tv screen"
-    canvas.width  = window.innerWidth;
-    canvas.height = window.innerHeight;
+    //Draw the "tv screen" — match the backing store to the size CSS gave us,
+    //so the canvas can never be wider than the page
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('load', resizeCanvas);
     update();
 })();
+
+function resizeCanvas() {
+    canvas.width  = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+}
 
 function update() {
     setTimeout(() => {

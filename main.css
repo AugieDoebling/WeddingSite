@@ -69,6 +69,10 @@ a {
  text-decoration: none;
 }
 
+.highlight {
+  color: #D84315;
+}
+
 .pagetitle {
  font-size: 48px;
  border-bottom: 10px solid #773F1A;

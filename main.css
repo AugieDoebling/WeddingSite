@@ -180,6 +180,11 @@ table td:nth-child(2) {
   z-index: -1;
 }
 
+/* Desktop gets the bouncing canvas above; the static dog is mobile-only */
+.mobile-dog {
+  display: none;
+}
+
 /* ---- Header ----
    The sign + 4 links need ~1007px of page width to sit on one line (measured:
    350 sign + 497 links + 4x20 gap + 80 margin). Below that, stack them. */
@@ -279,6 +284,18 @@ table td:nth-child(2) {
   .button {
     font-size: 26px;
     padding: 16px 24px;
+  }
+
+  /* Swap the bouncing dog for a static one peeking up from the bottom */
+  #bouncing-canvas {
+    display: none;
+  }
+
+  .mobile-dog {
+    display: block;
+    width: 160px;
+    max-width: 45%;
+    margin: 0 auto;
   }
 }
 
